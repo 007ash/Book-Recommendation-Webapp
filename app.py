@@ -3,10 +3,9 @@ import numpy as np
 import streamlit as st
 
 
-st.markdown(f""" <h2 style="text-align:center; font-style:arial; color:gray">
+st.markdown(f""" <h2 style="text-align:center; font-style:arial; color:#cccc">
             Books Recommender System
-            </h2>""",
-            unsafe_allow_html=True)
+            </h2>""", unsafe_allow_html=True)
 
 model = pickle.load(open('artifact\model.pkl', 'rb'))
 books_name = pickle.load(open("artifact\\book_names.pkl", 'rb'))   
@@ -66,10 +65,8 @@ if st.button('Show Recommendation'):
                 f"""
                 <div style="text-align:center; height:300px; display:flex; flex-direction:column; justify-content:space-between;">
                     <img src="{poster_url[i]}" style="width:100%; height:100%; object-fit:cover; border-radius:8px;"/>
-                    <p style="font-weight:bold; margin-top:10px;">{recommended_books[i]}</p>
+                    <p style=" color:#dddd; font-weight:bold; margin-top:10px;">{recommended_books[i]}</p>
                 </div>
-                """,
-                unsafe_allow_html=True
-            )
+                """,unsafe_allow_html=True)
 
     
