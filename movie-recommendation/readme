@@ -1,0 +1,68 @@
+# Movie Recommendation System
+
+This project is a movie recommendation system built using Python and various machine learning libraries. The goal is to provide users with personalized movie recommendations based on their preferences and viewing history.
+
+## Features
+
+- User authentication and profile management
+- Movie database with detailed information
+- Collaborative filtering for personalized recommendations
+- Content-based filtering using movie metadata
+- User-friendly web interface
+
+## Technologies Used
+
+- Python
+- Pandas
+- Scikit-learn
+- Streamlit
+
+## Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/yourusername/movie-recommendation.git
+   cd movie-recommendation
+   ```
+
+2. Create a virtual environment and activate it:
+
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+   ```
+
+3. Install the required packages:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. Set up the database:
+
+   ```bash
+   flask db init
+   flask db migrate
+   flask db upgrade
+   ```
+
+5. Run the application:
+
+   ```bash
+   flask run
+   ```
+
+## Usage
+
+1. Register a new account or log in to an existing account.
+2. Browse the movie database and add movies to your watchlist.
+3. Receive personalized movie recommendations based on your preferences.
+
+## Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
