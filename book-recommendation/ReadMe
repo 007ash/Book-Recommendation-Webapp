@@ -1,0 +1,68 @@
+# Book Recommendation System
+
+This project is a book recommendation system built using Python and various machine learning libraries. The goal is to provide users with personalized book recommendations based on their preferences and reading history.
+
+## Features
+
+- User authentication and profile management
+- Book database with detailed information
+- Collaborative filtering for personalized recommendations
+- Content-based filtering using book metadata
+- User-friendly web interface
+
+## Technologies Used
+
+- Python
+- Pandas
+- Scikit-learn
+- Streamlit
+
+## Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/yourusername/book-recommendation.git
+   cd book-recommendation
+   ```
+
+2. Create a virtual environment and activate it:
+
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+   ```
+
+3. Install the required packages:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. Set up the database:
+
+   ```bash
+   flask db init
+   flask db migrate
+   flask db upgrade
+   ```
+
+5. Run the application:
+
+   ```bash
+   flask run
+   ```
+
+## Usage
+
+1. Register a new account or log in to an existing account.
+2. Browse the book database and add books to your reading list.
+3. Receive personalized book recommendations based on your preferences.
+
+## Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
